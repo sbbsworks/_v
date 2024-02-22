@@ -1,0 +1,103 @@
+.container
+    width: 60%
+    position: absolute !important
+    top:0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: 16px auto
+    padding: 0 16px
+    box-shadow: sm
+    border-radius: sm
+    overflow: hidden
+    @media (max-width: 800px)
+        width: 88%
+        padding: 0 8px
+    > div
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        position: relative
+    .table
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        thead th:last-of-type
+            width: max-content
+        th
+            display: table-cell
+        th > button
+            display: flex
+            height: 100%
+            width: 100%
+            justify-content: center
+            align-items: center
+        tr
+            display: table
+            width: 100%
+            min-height: 46px
+            &:hover
+                background: #f1f4f8
+        tr > *:nth-of-type(1)
+            width: 50px
+            min-width: 50px !important
+            text-align: center
+        tr > *:nth-of-type(2)
+            width: 20% !important
+            text-align: left
+        tr > *:nth-of-type(3)
+            width: 20% !important
+            text-align: center
+        tr > *:nth-of-type(4)
+            width: 60% !important
+            text-align: right
+        td
+            font-size: 12px
+            font-weight: 400
+            @media (max-width: 800px)
+                font-size: 10px
+
+        .footer
+            margin: 12px 0
+            z-index: 11
+            > tr > td
+                height: 20px !important
+            .content
+                div[class*="Select"]
+                    --_input-bd-focus: #CDD7E1 !important
+                *[class*="ComboboxChevron"]
+                    display: none !important
+                display: flex
+                align-items: center
+                width: 100%
+                justify-content: space-between
+                > div:first-of-type
+                    margin-right: 12px
+                    width: 100%
+                @media (max-width: 800px)
+                    flex-direction: column
+                    > div:first-of-type
+                        margin: 0 0 6px 0 !important
+                .filter_container
+                    *
+                        cursor: pointer
+                .gears_content_container
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    width: 100%
+                    > div
+                        min-width: 80px
+                        text-align: right
+                        @media (max-width: 800px)
+                            width: 100%
+                    .button
+                        margin-left: 6px
+                        background: white !important
+                        width: 36px
+                        height: 36px
+                        border-radius: 5px !important
+
+
